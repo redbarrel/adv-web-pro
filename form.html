@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="row" v-if="flagProfile">
+            <div class="col-12">
+                <h1>{{ message }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">ที่อยู่อีเมล</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">เราจะไม่เปิดเผยที่อยู่อีเมลของคุณให้กับผู้อื่น</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">รหัสผ่าน</label>
+                                <input type="password" class "form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">เลือกฉัน</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">ส่ง</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
